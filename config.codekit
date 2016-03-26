@@ -3563,6 +3563,61 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/AWAdvertisingLogo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31131,
+		"inputAbbreviatedPath": "\/img\/AWAdvertisingLogo.png",
+		"outputAbbreviatedPath": "\/img\/AWAdvertisingLogo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/AWAppsLogo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 111741,
+		"inputAbbreviatedPath": "\/img\/AWAppsLogo.png",
+		"outputAbbreviatedPath": "\/img\/AWAppsLogo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/AWHardwareLogo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 94789,
+		"inputAbbreviatedPath": "\/img\/AWHardwareLogo.jpg",
+		"outputAbbreviatedPath": "\/img\/AWHardwareLogo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/GetMediaFile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52355,
+		"inputAbbreviatedPath": "\/img\/GetMediaFile.jpg",
+		"outputAbbreviatedPath": "\/img\/GetMediaFile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/PimpampoentjeLogo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 111875,
+		"inputAbbreviatedPath": "\/img\/PimpampoentjeLogo.jpg",
+		"outputAbbreviatedPath": "\/img\/PimpampoentjeLogo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
