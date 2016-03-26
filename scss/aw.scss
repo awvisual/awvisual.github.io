@@ -1,17 +1,23 @@
 //colors
 $black_50: rgba(0, 0, 0, .5);
-$bg_main: rgba(51, 149, 215, 0.5);
+$bg_main: url(/img/bg.png);
 $bg_white: rgba(255, 255, 255, 1);
+$padding-fi: 5px;
+$padding-fite: 15px;
 
 //fonts
 $font_0: Anton;
 $font_1: sans-serif;
 
+//urls
+
+
 body {
 	font-family: $font_0, $font_1;
-    background: $bg_main;
+    background: $bg_main no-repeat center center fixed;
+	background-size: cover;
+    color: $bg_white;
 }
-
 .drop-shadow {
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	box-shadow: 0 0 5px 2px $black_50;
@@ -24,5 +30,15 @@ body {
 	padding-right: 0;
 }
 .col-lg-5 img {
-	margin-bottom: 15px;
+    margin: 0 auto 15 auto;
+}
+a:link {
+    color: $bg_main;
+}
+a:hover {
+    text-decoration: none;
+    color: dodgerblue;
+}
+.mfive {
+    padding: $padding-fite;
 }

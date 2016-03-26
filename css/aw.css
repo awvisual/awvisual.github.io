@@ -1,6 +1,8 @@
 body {
   font-family: Anton, sans-serif;
-  background: rgba(51, 149, 215, 0.5); }
+  background: url(/img/bg.png) no-repeat center center fixed;
+  background-size: cover;
+  color: white; }
 
 .drop-shadow {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
@@ -12,4 +14,14 @@ body {
   padding-right: 0; }
 
 .col-lg-5 img {
-  margin-bottom: 15px; }
+  margin: 0 auto 15 auto; }
+
+a:link {
+  color: url(/img/bg.png); }
+
+a:hover {
+  text-decoration: none;
+  color: dodgerblue; }
+
+.mfive {
+  padding: 15px; }
