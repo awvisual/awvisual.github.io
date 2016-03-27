@@ -2,12 +2,29 @@
 $black_50: rgba(0, 0, 0, .5);
 $bg_main: url(/img/bg.png);
 $bg_white: rgba(255, 255, 255, 1);
+$concrete: #f2f2f2;
+$color_iron_approx: #d8d8d8;
+$color_cape_cod_approx: #404040;
+$color_pumice_approx: #c8c8c8;
+$color_nobel_approx: #b6b6b6;
+$color_star_dust_approx: #9f9f9f;
+$black_80: rgba(0,0,0,0.8);
+$color_romance_approx: #fefefe;
+
+
+//positioning
 $padding-fi: 5px;
 $padding-fite: 15px;
+$marg-top-te: 10px;
+
+//visuals
+$rad-five: 5px;
 
 //fonts
 $font_0: Anton;
 $font_1: sans-serif;
+$font_2: Helvetica;
+$font_3: sans-serif;
 
 //urls
 
@@ -41,4 +58,126 @@ a:hover {
 }
 .mfive {
     padding: $padding-fite;
+}
+.margin-t-te {
+    margin-top: $marg-top-te;
+}
+
+
+//navigation test
+
+ul {
+	&.links {
+		display: flex;
+		justify-content: flex-end;
+		flex: 1;
+		overflow: hidden;
+		li {
+			flex: none;
+			padding: 1rem;
+			a {
+				color: $color_cape_cod_approx;
+			}
+		}
+	}
+	&.hidden-links {
+		position: absolute;
+		background: $color_iron_approx;
+		right: 0;
+		top: 100%;
+		li {
+			padding: 1rem;
+			a {
+				color: $color_cape_cod_approx;
+				padding-right: 2rem;
+			}
+		}
+		&.hidden {
+			display: none;
+		}
+	}
+}
+* {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+}
+
+h5 {
+	text-align: center;
+	margin: auto;
+	font-size: 0.8rem;
+	line-height: 140%;
+	margin-top: 1rem;
+	max-width: 50ex;
+}
+p {
+	text-align: center;
+	margin-top: 3rem;
+}
+nav.greedy {
+    font-family: $font_0, $font_3;
+    box-shadow: 0 0 5px 2px $black_50;
+    z-index: 1000;
+	position: relative;
+	height: 60px;
+	display: flex;
+	align-items: center;
+    border-radius: $rad-five;
+	background: $concrete;
+    a:hover {
+        color:dodgerblue;
+    }
+    
+    li {
+        list-style: none;
+        padding-top: 20px;
+    }
+	h1 {
+		display: flex;
+		align-self: stretch;
+		align-items: center;
+		color: $color_cape_cod_approx;
+		padding: 0 1.5rem;
+        font-size: 1.5em;
+		font-weight: bold;
+	}
+	button {
+		align-self: stretch;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all .4s ease-out;
+		padding: 0 1rem 0 1.5rem;
+		outline: 0;
+		border: 0;
+        border-radius: 5px;
+		font-size: 1.5rem;
+		font-weight: bold;
+		background: $color_pumice_approx;
+		color: $color_cape_cod_approx;
+		&.hidden {
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: none;
+			border-right: 0.5rem solid $color_nobel_approx;
+			width: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+	}
+	button::after {
+		content: attr(count);
+		display: inline-flex;
+		width: 30px;
+		height: 30px;
+		align-items: center;
+		justify-content: center;
+		background: $color_star_dust_approx;
+		color: $concrete;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 1px 0 $black_80;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 50%;
+		font-size: 20px;
+		line-height: 14px;
+		margin-left: 1rem;
+		margin-right: calc(-1rem +-8px);
+	}
 }
