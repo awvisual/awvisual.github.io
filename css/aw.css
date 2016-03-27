@@ -79,6 +79,8 @@ nav.greedy {
   background: #f2f2f2; }
   nav.greedy a:hover {
     color: dodgerblue; }
+  nav.greedy i {
+    padding-left: 10px; }
   nav.greedy li {
     list-style: none;
     padding-top: 20px; }

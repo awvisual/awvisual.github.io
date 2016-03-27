@@ -1,0 +1,56 @@
+//colors
+$black_50: rgba(0, 0, 0, .5);
+$bg_main: url(../img/bg.jpg);
+$bg_white: rgba(255, 255, 255, 1);
+$concrete: #f2f2f2;
+$color_iron_approx: #d8d8d8;
+$color_cape_cod_approx: #404040;
+$color_pumice_approx: #c8c8c8;
+$color_nobel_approx: #b6b6b6;
+$color_star_dust_approx: #9f9f9f;
+$black_80: rgba(0,0,0,0.8);
+$color_romance_approx: #fefefe;
+
+
+//positioning
+$padding-fi: 5px;
+$padding-fite: 15px;
+$marg-top-te: 10px;
+
+//visuals
+$rad-five: 5px;
+
+//fonts
+$font_0: Anton;
+$font_1: sans-serif;
+$font_2: Helvetica;
+$font_3: sans-serif;
+
+body {
+	font-family: $font_0, $font_1;
+    background: $bg_main no-repeat center center fixed;
+	background-size: cover;
+    color: $bg_white;
+}
+.drop-shadow {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 5px 2px $black_50;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+    background: $bg_white;
+}
+.container.drop-shadow {
+	padding-left: 0;
+	padding-right: 0;
+}
+.projects {
+    color: $black_80;
+    h1 {
+        font-size: 14px;
+        font-family: $font_2, $font_3;
+        
+    }   
+}
+.margin-t-te {
+    margin-top: $marg-top-te;
+}
