@@ -3629,6 +3629,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/MFHCoverbandLogo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 843814,
+		"inputAbbreviatedPath": "\/img\/MFHCoverbandLogo.jpg",
+		"outputAbbreviatedPath": "\/img\/MFHCoverbandLogo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/PimpampoentjeLogo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
