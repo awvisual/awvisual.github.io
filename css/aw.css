@@ -29,6 +29,10 @@ a:hover {
 .margin-t-te {
   margin-top: 10px; }
 
+.about-inside {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 15px; }
+
 ul.links {
   display: flex;
   justify-content: flex-end;
