@@ -1,6 +1,23 @@
+h1 {
+  font-size: 8rem;
+  padding: 10px 10px;
+  text-align: left;
+  text-rendering: geometricPrecision; }
+  h1.insetshadow {
+    color: #fff;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #404040, 2px 2px 1px #e0dfdc; }
+
+h3 {
+  text-align: center;
+  text-rendering: geometricPrecision; }
+  h3.insetshadow {
+    color: #fff;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #404040, 2px 2px 1px #e0dfdc; }
+
 body {
-  font-family: Anton, sans-serif;
-  background: url(/img/bg.png) no-repeat center center fixed;
+  background: url(/img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   color: white; }
 
@@ -17,7 +34,7 @@ body {
   margin: 0 auto 15 auto; }
 
 a:link {
-  color: url(/img/bg.png); }
+  color: url(/img/bg.jpg); }
 
 a:hover {
   text-decoration: none;
@@ -26,38 +43,9 @@ a:hover {
 .mfive {
   padding: 15px; }
 
-.margin-t-te {
-  margin-top: 10px; }
-
 .about-inside {
   color: rgba(0, 0, 0, 0.8);
   padding: 15px; }
-
-ul.links {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
-  overflow: hidden; }
-  ul.links li {
-    flex: none;
-    padding: 1rem; }
-    ul.links li a {
-      color: #404040; }
-ul.hidden-links {
-  position: absolute;
-  background: #d8d8d8;
-  right: 0;
-  top: 100%; }
-  ul.hidden-links li {
-    padding: 1rem; }
-    ul.hidden-links li a {
-      color: #404040;
-      padding-right: 2rem; }
-  ul.hidden-links.hidden {
-    display: none; }
-
-* {
-  box-sizing: border-box; }
 
 h5 {
   text-align: center;
@@ -70,61 +58,3 @@ h5 {
 p {
   text-align: center;
   margin-top: 3rem; }
-
-nav.greedy {
-  font-family: Anton, sans-serif;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  position: relative;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  background: #f2f2f2; }
-  nav.greedy a:hover {
-    color: dodgerblue; }
-  nav.greedy i {
-    padding-left: 10px; }
-  nav.greedy li {
-    list-style: none;
-    padding-top: 20px; }
-  nav.greedy h1 {
-    display: flex;
-    align-self: stretch;
-    align-items: center;
-    color: #404040;
-    padding: 0 1.5rem;
-    font-size: 1.5em;
-    font-weight: bold; }
-  nav.greedy button {
-    align-self: stretch;
-    transition: all .4s ease-out;
-    padding: 0 1rem 0 1.5rem;
-    outline: 0;
-    border: 0;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background: #c8c8c8;
-    color: #404040; }
-    nav.greedy button.hidden {
-      transition: none;
-      border-right: 0.5rem solid #b6b6b6;
-      width: 0;
-      padding: 0;
-      overflow: hidden; }
-  nav.greedy button::after {
-    content: attr(count);
-    display: inline-flex;
-    width: 30px;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-    background: #9f9f9f;
-    color: #f2f2f2;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
-    border-radius: 50%;
-    font-size: 20px;
-    line-height: 14px;
-    margin-left: 1rem;
-    margin-right: calc(-1rem +-8px); }
