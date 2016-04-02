@@ -6727,9 +6727,6 @@ button.close {
 }
 
 body {
-  font-family: Anton, sans-serif;
-  background: url(/img/bg.png) no-repeat center center fixed;
-  background-size: cover;
   color: white; }
 
 .drop-shadow {

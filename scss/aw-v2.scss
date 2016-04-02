@@ -14,6 +14,13 @@ $color_cape_cod_approx: #404040;
 $white: #ffffff;
 $color_tradewind_approx: #5dba9d;
 
+//colors v2
+$color_endeavour_approx: #0a52a3;
+$color_steel_blue_approx: #4680c0;
+$color_denim_approx: #236ab9;
+$color_congress_blue_approx: #074182;
+$color_midnight_blue_approx: #053265;
+
 
 //positioning
 $padding-fi: 5px;
@@ -24,8 +31,8 @@ $marg-top-te: 10px;
 $rad-five: 5px;
 
 //fonts
-$font_0: Bangers;
-$font_1: cursive;
+$font_0: Didact Gothic;
+$font_1: sans-serif;
 
 //colors
 $color_alto_approx: #e0dfdc;
@@ -45,7 +52,8 @@ $black_20: rgba(0, 0, 0, 0.2);
 
 //urls
 
-
+//typo
+$fat: bold;
 
 
 
@@ -76,7 +84,10 @@ $black_20: rgba(0, 0, 0, 0.2);
 	}
 }
 
-
+.card-title{
+    font-weight: $fat;
+    text-transform: uppercase;
+}
 
 
 h1 {
@@ -105,8 +116,6 @@ h3 {
 }
 
 body {
-    background: $bg_main no-repeat center center fixed;
-	background-size: cover;
     color: $bg_white;
 }
 .drop-shadow {
@@ -123,9 +132,7 @@ body {
 .col-lg-5 img {
     margin: 0 auto 15 auto;
 }
-a:link {
-    color: $bg_main;
-}
+
 a:hover {
     text-decoration: none;
     color: dodgerblue;
