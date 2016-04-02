@@ -1,3 +1,25 @@
+.go-top {
+  z-index: 10001;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 30px;
+  position: fixed;
+  bottom: -40px;
+  left: 20px;
+  transition: all 1s ease;
+  background-color: #404040;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px; }
+  .go-top.show {
+    bottom: 20px; }
+  .go-top:hover {
+    background-color: #5dba9d;
+    color: #fff; }
+
 h1 {
   font-size: 8rem;
   padding: 10px 10px;
