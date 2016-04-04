@@ -80,3 +80,10 @@ h5 {
 p {
   text-align: center;
   margin-top: 3rem; }
+
+.form-style {
+  color: black;
+  background: #FFF; }
+
+.form-btn {
+  margin-left: 15px; }
