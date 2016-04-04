@@ -2975,7 +2975,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #00897b;
+  background-color: #000;
 }
 
 footer.page-footer .footer-copyright {
@@ -4086,7 +4086,7 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  background-color: #00897b;
+  background-color: #000;
   width: 100%;
   height: 56px;
   line-height: 56px;
