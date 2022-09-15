@@ -30,7 +30,9 @@ h1 {
   font-size: 8rem;
   padding: 10px 10px;
   text-align: left;
-  text-rendering: geometricPrecision; }
+  text-rendering: geometricPrecision;
+  font-family: 'Source Sans Pro', sans-serif;
+}
   h1.insetshadow {
     color: #fff;
     letter-spacing: .1em;
