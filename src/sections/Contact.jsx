@@ -12,7 +12,7 @@ const Contact = () => {
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                     >
-                        <h2 className="text-4xl md:text-5xl font-display font-black mb-8 leading-tight">
+                        <h2 className="text-4xl md:text-5xl font-display font-black mb-8 leading-tight text-slate-900">
                             Let's build something <br />
                             <span className="text-gradient">extraordinary</span> together.
                         </h2>
@@ -23,8 +23,8 @@ const Contact = () => {
                                     <Mail size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold mb-1">Email us</h4>
-                                    <p className="text-white/50">info@aw-advertising.be</p>
+                                    <h4 className="font-bold mb-1 text-slate-800">Email us</h4>
+                                    <p className="text-slate-500">info@aw-advertising.be</p>
                                 </div>
                             </div>
 
@@ -33,8 +33,8 @@ const Contact = () => {
                                     <MapPin size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold mb-1">Visit us</h4>
-                                    <p className="text-white/50">Gullegemsestraat 111, 8880 Sint-Eloois-Winkel</p>
+                                    <h4 className="font-bold mb-1 text-slate-800">Visit us</h4>
+                                    <p className="text-slate-500">Gullegemsestraat 111, 8880 Sint-Eloois-Winkel</p>
                                 </div>
                             </div>
                         </div>
@@ -48,26 +48,26 @@ const Contact = () => {
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-sm font-bold text-white/40 ml-1">Name</label>
-                                    <input type="text" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-blue transition-colors" placeholder="Vandamme Wouter" />
+                                    <label className="text-sm font-bold text-slate-400 ml-1">Name</label>
+                                    <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-blue transition-colors text-slate-900" placeholder="Vandamme Wouter" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm font-bold text-white/40 ml-1">Phone</label>
-                                    <input type="tel" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-blue transition-colors" placeholder="+32 ..." />
+                                    <label className="text-sm font-bold text-slate-400 ml-1">Phone</label>
+                                    <input type="tel" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-blue transition-colors text-slate-900" placeholder="+32 ..." />
                                 </div>
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-sm font-bold text-white/40 ml-1">Email</label>
-                                <input type="email" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-blue transition-colors" placeholder="hello@example.com" />
+                                <label className="text-sm font-bold text-slate-400 ml-1">Email</label>
+                                <input type="email" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-blue transition-colors text-slate-900" placeholder="hello@example.com" />
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-sm font-bold text-white/40 ml-1">Message</label>
-                                <textarea rows="4" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-blue transition-colors resize-none" placeholder="How can we help you?"></textarea>
+                                <label className="text-sm font-bold text-slate-400 ml-1">Message</label>
+                                <textarea rows="4" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-blue transition-colors resize-none text-slate-900" placeholder="How can we help you?"></textarea>
                             </div>
 
-                            <button className="w-full py-4 bg-brand-blue hover:bg-brand-accent transition-all rounded-xl font-bold flex items-center justify-center gap-2 group">
+                            <button className="w-full py-4 bg-brand-blue hover:bg-brand-accent transition-all rounded-xl font-bold flex items-center justify-center gap-2 group text-white">
                                 Send Message <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                             </button>
                         </form>

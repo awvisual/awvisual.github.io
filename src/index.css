@@ -4,12 +4,16 @@
 
 @layer base {
   body {
-    @apply bg-brand-darker text-white antialiased font-sans;
+    @apply bg-[#fdfdfd] text-slate-900 antialiased font-sans;
   }
 }
 
 .glass {
-  @apply bg-white/5 backdrop-blur-md border border-white/10;
+  @apply bg-white/40 backdrop-blur-xl border border-white/20 shadow-xl shadow-black/5;
+}
+
+.glass-dark {
+  @apply bg-slate-900/80 backdrop-blur-xl border border-white/5;
 }
 
 .glass-hover {

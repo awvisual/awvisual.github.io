@@ -42,7 +42,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-24 bg-brand-dark">
+        <section id="projects" className="py-24 bg-slate-50 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="mb-16">
                     <motion.h2
@@ -59,9 +59,14 @@ const Projects = () => {
                     {projects.map((project, idx) => (
                         <motion.div
                             key={idx}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: idx * 0.1 }}
+                            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                            viewport={{ once: true, margin: "-10%" }}
+                            transition={{
+                                duration: 0.6,
+                                delay: idx * 0.1,
+                                ease: [0.16, 1, 0.3, 1]
+                            }}
                         >
                             <ProjectCard {...project} />
                         </motion.div>
