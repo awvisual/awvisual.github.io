@@ -28,16 +28,15 @@ const Hero = () => {
             />
 
             <div className="container mx-auto px-6">
-                <div className="max-w-3xl">
+                <div className="max-w-12xl">
                     <motion.div
                         style={{ y: yText, opacity: opacityHero }}
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1 className="text-5xl md:text-7xl font-display font-black leading-tight mb-6 text-slate-950">
-                            {t('hero_title_1')} <br />
-                            <span className="text-gradient">{t('hero_title_2')}</span>{t('hero_title_3')}
+                        <h1 className="text-6xl md:text-7xl font-display font-black leading-tight mb-6 text-slate-950">
+                            {t('hero_title_1')} <span className="text-gradient">{t('hero_title_2')}</span>{t('hero_title_3')}
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed font-sans max-w-xl">
                             {t('hero_subtitle')}
