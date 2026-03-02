@@ -34,7 +34,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, x: 0 }}
                         className="text-2xl font-display font-bold bg-gradient-to-r from-brand-blue via-slate-900 to-brand-blue bg-[length:200%_auto] animate-gradient-x bg-clip-text text-transparent"
                     >
-                        AW <span className="text-slate-400 text-sm font-normal">Reclamebureau</span>
+                        AW <span className="text-slate-400 text-sm font-normal">Reclamebureau Vlaanderen</span>
                     </motion.div>
 
                     {/* Desktop Nav */}
