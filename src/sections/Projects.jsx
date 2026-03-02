@@ -1,46 +1,56 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
-
-const projects = [
-    {
-        title: "AW Reclamebureau",
-        category: "Branding & Web",
-        description: "Since 2008, AW has been a steady value in online and offline advertising. We combine communication, creation, and web development to build distinctive concepts.",
-        image: "/assets/AWAdvertisingLogo.png",
-        link: "https://aw-reclamebureau-vlaanderen.be"
-    },
-    {
-        title: "Mobile App Development",
-        category: "Development",
-        description: "Developing custom apps for iOS, Windows, and Android. From marketing campaigns to customer management, we use the latest technologies tailored to your brand.",
-        image: "/assets/AWAppsLogo.png",
-        link: "https://aw-adv-web-apps.com/"
-    },
-    {
-        title: "MFH Coverband",
-        category: "Music & Entertainment",
-        description: "Foundations in Foo Fighters, Metallica, and Muse. Delivering a high-energy setlist full of quality rock and ball-sy covers to ensure an unforgettable night.",
-        image: "https://mfh-coverband.be/img/mfh-front.png",
-        link: "https://mfh-coverband.be"
-    },
-    {
-        title: "Endnote Metal",
-        category: "Music",
-        description: "Metal from the heart of Flanders. Risen from the ashes of different punk and metal bands, bringing influence from Gojira, Death, and In Flames.",
-        image: "https://endnote-metal.be/assets/img/EndNote-traces-ep-front.jpg",
-        link: "https://endnote-metal.be"
-    },
-    {
-        title: "MoshRoom Vzw",
-        category: "Community",
-        description: "A music-minded community initiative providing facilities and guidance for creative bands. From recordings to event promotion and merchandise.",
-        image: "/assets/PimpampoentjeLogo.jpg",
-        link: "https://moshroom-vzw.be"
-    }
-];
+import { useLanguage } from '../i18n/LanguageContext';
 
 const Projects = () => {
+    const { t } = useLanguage();
+
+    const projects = [
+        {
+            title: t('project_calculator_title'),
+            category: t('project_calculator_category'),
+            description: t('project_calculator_desc'),
+            image: "/screenshots/calculator.png",
+            link: "https://calculator.wost666.be"
+        },
+        {
+            title: t('project_calendar_title'),
+            category: t('project_calendar_category'),
+            description: t('project_calendar_desc'),
+            image: "/screenshots/calendar.png",
+            link: "https://calendar.wost666.be"
+        },
+        {
+            title: t('project_flight_title'),
+            category: t('project_flight_category'),
+            description: t('project_flight_desc'),
+            image: "/screenshots/flighttracker.png",
+            link: "https://flighttracker.wost666.be"
+        },
+        {
+            title: t('project_game_title'),
+            category: t('project_game_category'),
+            description: t('project_game_desc'),
+            image: "/screenshots/gametracker.png",
+            link: "https://gametracker.wost666.be"
+        },
+        {
+            title: t('project_time_title'),
+            category: t('project_time_category'),
+            description: t('project_time_desc'),
+            image: "/screenshots/timetracker.png",
+            link: "https://timetracker.wost666.be"
+        },
+        {
+            title: t('project_weekgames_title'),
+            category: t('project_weekgames_category'),
+            description: t('project_weekgames_desc'),
+            image: "/screenshots/weekgames.png",
+            link: "https://weekgames.wost666.be"
+        }
+    ];
+
     return (
         <section id="projects" className="py-24 bg-slate-50 relative overflow-hidden">
             <div className="container mx-auto px-6">
@@ -50,7 +60,7 @@ const Projects = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className="text-4xl md:text-5xl font-display font-black mb-4"
                     >
-                        Featured <span className="text-gradient">Work</span>
+                        {t('projects_title_1')}<span className="text-gradient">{t('projects_title_highlight')}</span>
                     </motion.h2>
                     <div className="w-20 h-1 bg-brand-blue rounded-full" />
                 </div>

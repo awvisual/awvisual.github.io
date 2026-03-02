@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const Hero = () => {
+    const { t } = useLanguage();
     const containerRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -34,19 +36,15 @@ const Hero = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-5xl md:text-7xl font-display font-black leading-tight mb-6 text-slate-950">
-                            Crafting Digital <br />
-                            <span className="text-gradient">Experiences</span> that Elevates
+                            {t('hero_title_1')} <br />
+                            <span className="text-gradient">{t('hero_title_2')}</span>{t('hero_title_3')}
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed font-sans max-w-xl">
-                            Since 2008, We have been a steady value in the world of online,
-                            combining communication, creation, and high-end development.
+                            {t('hero_subtitle')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <button className="px-8 py-4 bg-brand-blue hover:bg-brand-accent transition-colors rounded-xl font-bold text-lg text-white shadow-lg shadow-brand-blue/20">
-                                View Projects
-                            </button>
-                            <button className="px-8 py-4 glass glass-hover rounded-xl font-bold text-lg text-slate-700">
-                                Our Services
+                                {t('hero_btn_projects')}
                             </button>
                         </div>
                     </motion.div>
@@ -58,7 +56,7 @@ const Hero = () => {
                 style={{ opacity: opacityHero }}
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
             >
-                <span className="text-[10px] uppercase tracking-widest text-white/20 font-bold">Scroll</span>
+                <span className="text-[10px] uppercase tracking-widest text-white/20 font-bold">{t('hero_scroll')}</span>
                 <div className="w-px h-12 bg-gradient-to-b from-brand-blue to-transparent" />
             </motion.div>
         </section>

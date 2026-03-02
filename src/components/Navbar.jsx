@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUp } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { t } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,10 +17,9 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Home', href: '#' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Inside Media', href: '#inside' },
-        { name: 'Contact', href: '#contact' },
+        { name: t('nav_home'), href: '#' },
+        { name: t('nav_projects'), href: '#projects' },
+        { name: t('nav_contact'), href: '#contact' },
     ];
 
     return (
@@ -38,9 +39,9 @@ const Navbar = () => {
 
                     {/* Desktop Nav */}
                     <div className="hidden md:flex space-x-8 items-center">
-                        {navLinks.map((link) => (
+                        {navLinks.map((link, idx) => (
                             <a
-                                key={link.name}
+                                key={idx}
                                 href={link.href}
                                 className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors"
                             >
@@ -51,7 +52,7 @@ const Navbar = () => {
                             href="#contact"
                             className="px-5 py-2 glass glass-hover rounded-full text-sm font-medium text-slate-700 transition-all border-black/5"
                         >
-                            Get in touch
+                            {t('nav_cta')}
                         </a>
                     </div>
 
@@ -75,9 +76,9 @@ const Navbar = () => {
                         className="fixed inset-0 z-40 md:hidden bg-brand-darker pt-24 px-6"
                     >
                         <div className="flex flex-col space-y-6">
-                            {navLinks.map((link) => (
+                            {navLinks.map((link, idx) => (
                                 <a
-                                    key={link.name}
+                                    key={idx}
                                     href={link.href}
                                     className="text-2xl font-display font-semibold text-white/80"
                                     onClick={() => setIsMobileMenuOpen(false)}
